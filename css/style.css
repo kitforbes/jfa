@@ -1,0 +1,383 @@
+@import '../fonts/stylesheet.css';
+/*@import '../css/swipe-style.css';*/
+
+/*START RESET*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*END OF RESET*/
+
+/*GENERAL*/
+
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	background-color: #66686a;
+	font-family: "Beteckna lower case", sans-serif;
+	}
+
+.slider-controls {
+	padding: 10px;
+}
+
+a.next-project {
+	display: block;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 10px;
+	text-align: center;
+	width: 100%;
+	margin-top: 10px;
+}
+
+div#slider-controls a {
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 10px;
+}
+
+div#slider-controls a:hover {
+	opacity: 0.5;
+}
+
+a.current-link {
+	color: rgba(154, 212, 238, 1)!important;
+}
+
+#content div.nav ul.nav-list li, #content div.nav-4high ul.nav-list li, #content div.nav-5high ul.nav-list li {
+	color: white;
+}
+
+div.cube-copy p a {
+	color: rgba(154, 212, 238, 1);
+	text-decoration: none;
+}
+
+div.cube-copy p a:hover {
+	opacity: 0.5;
+}
+
+.50percent {
+	opacity: 0.5;
+}
+
+.light-blue {
+	color: rgba(154, 212, 238, 1)!important;
+}
+
+/*END OF GENERAL*/
+
+/*CONTENT*/
+
+div#content,div#content-home {
+	width: 952px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-size: 100%;
+}
+
+div#header {
+	width: 948px;
+	height: 75px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a#logo {
+	width: 230px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+h1 {
+	font-size: 14px;
+	color: white;
+	letter-spacing: 1px;
+}
+
+h2 {
+	font-size: 13px;
+	color: white;
+	letter-spacing: 1px;
+}
+
+h3 {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: 1px;
+}
+
+p {
+	font-size: 11px;
+	color: white;
+}
+
+/*END OF CONTENT*/
+
+/*NAVIGATION*/
+
+div.nav {
+	position: absolute;
+	width: 86px;
+	background-color: #484849;
+	padding: 10px 15px 15px 14px;
+	z-index: 2;
+	height: 90px;
+}
+
+ul.nav-list.projects-nav { /*Sub Nav on Projects*/
+	line-height: 1px;
+	padding: 10px 10px 10px 16px;
+}
+
+div.nav-3high ul.nav-list, div.nav-4high ul.nav-list, div.nav-5high ul.nav-list, div.nav-projects ul.nav-list {
+	padding: 16px 0 16px 16px;
+}
+
+div.nav-3high {
+	margin-right: 4px;
+	float: left;
+	width: 115px;
+	background-color: #484849;
+	z-index: 2;
+	height: 353px;
+	margin-top: 4px;
+}
+
+div.nav-4high {
+	margin-right: 4px;
+	float: left;
+	width: 115px;
+	background-color: #484849;
+	z-index: 2;
+	height: 460px;
+	margin-top: 4px;
+}
+
+div.nav-5high {
+	margin-right: 4px;
+	float: left;
+	width: 115px;
+	background-color: #484849;
+	z-index: 2;
+	height: 575px;
+	margin-top: 4px;
+}
+
+div.nav-projects {
+	margin-right: 4px;
+	float: left;
+	width: 115px;
+	background-color: #484849;
+	z-index: 2;
+	height: 472px;
+}
+
+div.nav ul li a,div.nav-4high ul li a,.nav-list a{
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: normal;
+	font-style: normal;
+}
+
+div.nav ul li a:hover,div.nav-4high ul li a:hover,.nav-list a:hover {
+	opacity: 0.5;
+}
+
+div#slider.swipe li{
+	float: left;
+}
+
+a.project-link {
+	display: block;
+	text-decoration: none;
+	color: white;
+	width: 115px;
+	height: 70px;
+	text-align: center;
+	padding-top: 45px;
+	opacity: 0;
+	background-color: rgb(116, 118, 121);
+	text-transform: uppercase;
+}
+
+a.project-link:hover {
+	opacity: 1;
+}
+
+#content div.cube h1 {
+}
+
+.project-info p {
+	padding: 0 5px 5px 10px;
+		font-size: 11px;
+	letter-spacing: 1px;
+}
+
+#content div.nav ul.nav-list li.nav-arrows a, li.nav-arrows {
+	font-weight: normal;
+	font-size: 22px;
+	font-style: normal;
+}
+
+a.arrow-links {
+	margin-right: 5px;
+	margin-left: -1px;
+	color: rgba(154, 212, 238, 1)!important;
+	font-size: 22px;
+}
+
+div#start-cube.cube.high1.wide1.project-info {
+	padding-top: 10px;
+	height: 105px;
+}
+
+p.client-type {
+	opacity: 0.5;
+	position: absolute;
+	bottom: 5px;
+	padding-right: 2px;
+}
+
+p.copyright-type {
+	opacity: 0.5;
+	position: absolute;
+	bottom: 5px;
+	padding-right: 2px;
+	font-size: 8px;
+}
+
+/*END OF NAVIGATION*/
+
+/*CUBES*/
+
+div.cube {
+	position: relative;
+	display: inline;
+	float: left;
+	background-color: #484849;
+	margin-right: 4px;
+	margin-top: 4px;
+}
+
+a.cube-copy-link {
+	display: block;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 0.625em;
+	line-height: 2em;
+	letter-spacing: 0.200em;
+	width: 60px;
+	height: 60px;
+	padding-top: 11px;
+	margin-top: 23px;
+	margin-left: 29px;
+	text-align: center;
+}
+
+.cube-copy {
+	float: left;
+	padding: 16px;
+}
+
+.practice-copy {
+	float: left;
+	padding: 16px 25px 16px 16px;
+	line-height: 18px;
+}
+
+.high1 {
+	height: 115px;
+}
+
+.high4 {
+	height: 460px;
+}
+
+.high3 {
+	height: 353px;
+}
+
+.high5 {
+	height: 575px;
+}
+
+.wide1 {
+	width: 115px;
+}
+
+.wide2 {
+	width: 234px;
+}
+
+.wide3 {
+	width: 353px;
+}
+
+.wide5 {
+	width: 591px;
+}
+
+/*END OF CUBES*/
+
+div#content,div#slider.swipe li{
+	width: 952px;
+}
+
+div#content-home {
+	width: 948px;
+}
+
+div.nav {
+	margin-right: 4px;
+}
+
+div#end-cube {
+	margin-right: 0px;
+}

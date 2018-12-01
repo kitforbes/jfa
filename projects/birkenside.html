@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>John Forbes | Architect | Edinburgh | Birkenside</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+  <script src='../js/swipe.js'></script>
+</head>
+
+<body>
+  <div id="header">
+    <a id="logo" href="../index.html"><img width="230px" height="48px" src="../img/gen/logo.png" alt="" /></a>
+  </div>
+
+  <div id="content">
+    <div class="nav">
+      <ul class="nav-list">
+        <li><a href="../the-practice.html">Practice</a></li>
+        <li><a href="../contact.html">Contacts</a></li>
+        <li><a class="current-link" href="#">Projects</a></li>
+        <li class="nav-arrows"><a class="arrow-links" href="dalkeith-lodge.html"><</a> <a class="arrow-links" href="garden-cottage.html">></a></li>
+      </ul>
+    </div>
+
+    <div id='slider' class='swipe' style="width: 948px; height: 353px; overflow: hidden; float: left;">
+      <ul>
+        <li style="display:block;"><img width="100%" src="../img/projects/birkenside/john-forbes-birkenside-3.jpg" alt="" /></li>
+        <li style="display:none; margin-top: -180px;"><img width="100%" src="../img/projects/birkenside/john-forbes-birkenside-1.jpg" alt="" /></li>
+        <!-- <li style="display:none; margin-top: -150px;"><img width="100%" src="../img/projects/birkenside/john-forbes-birkenside-2.jpg" alt="" /></li> -->
+        <li style="display:none; margin-top: -50px;"><img width="100%" src="../img/projects/birkenside/john-forbes-birkenside-4.jpg" alt="" /></li>
+        <li style="display:none;"><img width="100%" src="../img/projects/birkenside/john-forbes-birkenside-8.jpg" alt="" /></li>
+        <li style="display:none; margin-top: -50px;"><img width="100%" src="../img/projects/birkenside/john-forbes-birkenside-5.jpg" alt="" /></li>
+        <li style="display:none;"><img style="margin-right: 4px;" src="../img/projects/birkenside/john-forbes-birkenside-6.jpg" alt="" /><img src="../img/projects/birkenside/john-forbes-birkenside-7.jpg" alt="" /></li>
+      </ul>
+    </div>
+
+    <div class="cube high1 wide1 project-info" id="start-cube">
+      <p class="50percent light-blue">PROJECT:</p>
+      <p>RENOVATION OF REMOTE COTTAGE OFF GRID DESIGN.</p>
+      <p class="client-type">PRIVATE CLIENT</p>
+    </div>
+
+    <div class="cube high1 wide1">
+      <ul class="nav-list slider-controls">
+        <p>IMAGES</p>
+        <li class="nav-arrows"><a id='prev' onclick="mySwipe.prev();return false;" class="arrow-links" href="#"><</a> <a id='next' onclick="mySwipe.next();return false;" class="arrow-links" href="#">></a></li>
+      </ul>
+    </div>
+
+    <div class="cube high1 wide1"></div>
+    <div class="cube high1 wide1"></div>
+    <div class="cube high1 wide1"></div>
+    <div class="cube high1 wide1"></div>
+    <div class="cube high1 wide1"></div>
+    <div class="cube high1 wide1" id="end-cube"></div>
+
+    <script>
+      window.mySwipe = new Swipe(document.getElementById('slider'), {
+        startSlide: 0,
+        speed: 2000,
+        auto: 0
+      });
+    </script>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>John Forbes | Architect | Edinburgh | The Practice</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <script src='js/swipe.js'></script>
+  <style>
+    div.cube {
+      margin-top: 0px;
+      margin-bottom: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header">
+    <a id="logo" href="index.html"><img width="230px" height="48px" src="img/gen/logo.png" alt="" /></a>
+  </div>
+
+  <div id="content">
+    <div class="nav">
+      <ul class="nav-list">
+        <li><a class="current-link" href="#">Practice</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+        <li><a href="projects/lugton-house.html">Projects</a></li>
+        <li class="nav-arrows"><a class="arrow-links" href="the-practice-2.html">></a></li>
+      </ul>
+    </div>
+
+    <div id='slider' class='swipe' style="width: 591px; height: 353px; overflow: hidden; float: left;">
+      <ul>
+        <li style="display:block;"><img width="591px" src="img/gen/bio-book.jpg" alt="" /></li>
+      </ul>
+    </div>
+
+    <div style="margin-left: 4px;" class="cube high3 wide2">
+      <div class="practice-copy">
+        <p>John Forbes has practiced in Scotland since 1983, with an emphasis on residential projects and in particular
+          work involving existing and Listed Buildings. He has gathered a remarkable wealth of experience in design,
+          management and on-site construction. Having diversified in education and property development
+          in the past, the current practice is focused entirely on commissions from private clients, with the majority
+          of
+          the work involving new houses, house renovations and extensions. As a sole practitioner, there are a limited
+          number of projects that are undertaken in
+          any one year, ensuring that the client receives a tailored, effective and diligent service.</p>
+        <ul class="nav-list">
+          <li class="nav-arrows"><a class="arrow-links" href="the-practice-2.html">></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cube high1 wide1"></div>
+    <div class="cube high1 wide1"></div>
+    <div class="cube high1 wide1"></div>
+    <div class="cube high1 wide1"></div>
+    <div class="cube high1 wide1"></div>
+    <div class="cube high1 wide1"></div>
+    <div class="cube high1 wide1"></div>
+    <div class="cube high1 wide1"></div>
+    <div class="cube high1 wide1"></div>
+    <div class="cube high1 wide1"></div>
+    <div class="cube high1 wide1" id="end-cube"></div>
+
+    <script>
+      window.mySwipe = new Swipe(document.getElementById('slider'), {
+        startSlide: 0,
+        speed: 2000,
+        auto: 0
+      });
+    </script>
+  </div>
+</body>
+
+</html>
